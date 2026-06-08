@@ -1,0 +1,225 @@
+# ─────────────────────────────────────────────────────────────────────────
+# Single source of truth for the CV (vitae/) and résumé (resume/).
+#
+# Prose fields use literal block scalars ( | ): wrap across as many lines as you
+# like — they fold back into one paragraph when rendered. They may contain
+# inline Typst markup — _italic_, *bold*, `code`, #highlight[...], links via
+# #tlink("url")[text], and \$ for a literal dollar sign. Everything else is
+# plain text. Keys are dash-case.
+# ─────────────────────────────────────────────────────────────────────────
+
+personal:
+  name: Amittai Siavava
+  headline: Product Engineer
+  summary: |
+    Software engineer with extensive experience driving products #highlight[end-to-end]
+    — from identifying partner needs and gaps to designing, building, and shipping the
+    full solution and its client-facing experience across #highlight[both backend and
+    frontend] (experienced with both Web and Mobile). I profile for performance
+    bottlenecks and measure growth and adoption.
+  location: Menlo Park, California, United States
+  phone: "+1 (929) 844 − 0093"
+  contacts:
+    - label: E-mail
+      url: mailto:amittaijoel@outlook.com
+      display: amittaijoel@outlook.com
+    - label: Website
+      url: https://amittai.studio
+      display: https://amittai.studio
+    - label: GitHub
+      url: https://github.com/siavava
+      display: https://github.com/siavava
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/siavava
+      display: https://linkedin.com/in/siavava
+
+education:
+  institution:
+    name: Dartmouth College
+    url: https://home.dartmouth.edu/
+  location: Hanover, New Hampshire, United States
+  location-short: Hanover, NH
+  degree: Bachelor of Science in Mathematics and Computer Science
+  duration: September 2020 – June 2024
+  period: 2020 — 2024
+  gpa:
+    overall: "3.7"
+    detail: 3.87 in Mathematics, 3.9 in Computer Science
+  honors:
+    - King Scholar
+    - Great Issues Scholar
+  relevant-coursework: |
+    Algorithms, Operating Systems, Database Systems, Machine Learning,
+    Computer Vision, Computational Linguistics, Computer Architecture
+  coursework-intro: |
+    Coursework comprised more than forty courses across computer science,
+    mathematics, physics, and the humanities, organized as follows:
+  coursework:
+    - label: Computer Science — theoretical track
+      body: Algorithms, Theory of Computation, Game Theory.
+    - label: Computer Science — systems track
+      body: |
+        Systems Engineering, Computer Architecture, Fullstack Web Development,
+        Operating Systems, Database Systems.
+    - label: Computer Science — applied track
+      body: |
+        Computational Linguistics / NLP, Machine Learning, Artificial
+        Intelligence, Computer Vision, Physical Computing, Data Mining, Deep
+        Learning Robustness, Face Perception, Computational Neuroscience.
+    - label: Mathematics
+      body: |
+        Multivariable & Vector Calculus, Linear Algebra, Differential Equations,
+        Computability Theory, Complex & Real Analysis, Mathematical Logic,
+        Abstract Algebra, Algebraic Number Theory, Game Theory.
+    - label: Senior Design Challenge
+      url: https://discite-website.vercel.app/
+      body: |
+        In a team of five, designed and built a video-based educational social
+        network — a mobile app, backend server, recommendation system, and a
+        machine learning pipeline that semantically segments educational videos
+        into atomic clips optimized for learning.
+  other-programs:
+    - program:
+        name: Y Combinator Startup School
+        url: https://www.startupschool.org/
+      dates: June – September 2022
+      description: An in-person summer program on the early stages of founding a startup.
+
+experience:
+  - role: Software Engineer
+    org: Meta / Facebook
+    location: Menlo Park, California
+    location-short: Menlo Park, CA
+    dates: Since August 2024
+    period: 2024 — Present
+    summary: |
+      On the _Messaging and Instagram API & Platform_ team (twelve engineers),
+      building and maintaining Meta's
+      #tlink("https://developers.facebook.com/docs/messenger-platform/")[Messaging APIs]
+      — Meta's primary channel for monetizing social-media messaging, with an
+      estimated revenue impact of over \$15M daily in 2025. My work includes:
+    responsibilities:
+      - |
+        Building and maintaining the client-side experiences (iOS and Web) for
+        API-messaging features on Messenger and Instagram.
+      - |
+        Designing and shipping new platform APIs for third-party developers such
+        as #tlink("https://manychat.com/")[ManyChat] and
+        #tlink("https://pancake.biz/")[Pancake] — including the
+        #tlink("https://developers.facebook.com/docs/messenger-platform/send-messages/utility-messages/")[*Utility Messages API*],
+        a new class of messages for notifications like appointment reminders and
+        shipping updates, and the
+        #tlink("https://developers.facebook.com/docs/messenger-platform/calling/consumer2biz")[*Consumer-to-Business Calling API*],
+        which brings voice and video calling into third-party messaging
+        experiences.
+      - |
+        Partnering with cross-functional teams (product, design, data science
+        and data engineering) to deliver features, read usage trends, and drive
+        adoption.
+      - Mentoring a summer intern and a new member of the team.
+      - |
+        Carrying 24/7 platform ownership one week every ∼3 months through the
+        team's immediate-response oncall (`IROC`) rotation.
+    technologies: C++, Hack, Swift, Objective-C, JavaScript, Python
+  - role: Software Engineering Intern
+    org: Meta / Facebook
+    location: Menlo Park, California
+    location-short: Menlo Park, CA
+    dates: June – September 2022
+    period: Summer 2022
+    summary: |
+      Worked on the _Ads Serving Reliability_ team to harden Meta's machine
+      learning data pipelines for understanding user signal on ads, as Meta
+      adapted its ML strategy to the limited data left after Apple's iOS 14.5
+      cross-app-tracking restrictions. I:
+    responsibilities:
+      - |
+        prototyped a closed-loop ML pipeline connecting Meta's internal data
+        stores to training and inference workflows and back to the apps as
+        feedback;
+      - |
+        built a command-line utility for monitoring and controlling data
+        throughput, letting ML engineers tune data rates to the scale of
+        experimentation.
+    technologies: C++, Hack, Python, SQL
+
+teaching:
+  - role: Teaching Assistant
+    org: Dartmouth College
+    location: Hanover, New Hampshire
+    dates: September 2021 – June 2024
+    period: 2021 — 2024
+    summary: |
+      Worked with professors to develop and grade assignments for various
+      computer science courses, and held office hours for additional student
+      support:
+    courses:
+      - name: Object-Oriented Programming
+        url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-10
+        terms: 2 terms
+      - name: Systems Engineering
+        url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-50
+        terms: 5 terms
+      - name: Fullstack Web Development
+        url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-52
+        terms: 1 term
+      - name: Database Systems
+        url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-61
+        terms: 1 term
+      - name: Artificial Intelligence
+        url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-76
+        terms: 1 term
+
+publications:
+  intro: |
+    All three articles appeared in the _Dartmouth Undergraduate Journal of
+    Science_, authored by Amittai Siavava.
+  items:
+    - title: Data-Driven Behaviour Change
+      url: https://drive.google.com/file/d/10pPL-bl--rfk-sIrPgorz_zRhDCEhmXi
+      date: March 2021
+      description: Explores trends in the use of machine learning for informed decision-making.
+    - title: Technology in the Developing World
+      url: https://drive.google.com/file/d/1AS3LVmtHsn5Sr35XwZd0SPJN8RAn0gXg
+      date: November 2020
+      description: Explores the adoption and use of technology in developing countries.
+    - title: Present and Future Trends in Space Exploration
+      url: https://drive.google.com/file/d/1ZsdqUTbPkd2RR_jr03zMrSHBNnokbLW2
+      date: November 2020
+      description: Explores previous and current themes in human space exploration.
+
+skills:
+  languages: "Python, Rust, C, C++, Java, TypeScript, Hack, Haskell, x86 Assembly, HTML, CSS, SQL, LaTeX, Julia, C#, F#."
+  languages-note: (list not exhaustive; in rough order of familiarity / preference)
+  areas-of-interest: |
+    Machine learning, artificial intelligence, NLP, computer vision, deep
+    learning robustness, full-stack web development, database systems, computer
+    architecture.
+  groups:
+    - name: Languages
+      icon: code
+      icon-solid: true
+      skills: [Python, Rust, C, C++, Java, TypeScript, Hack, Haskell, x86 Assembly, Julia, "C#", "F#"]
+    - name: Web & Data
+      icon: laptop-code
+      icon-solid: true
+      skills: [HTML, CSS, JavaScript, SQL, Full-stack web]
+    - name: ML & AI
+      icon: brain
+      icon-solid: true
+      skills: [Machine Learning, NLP, Computer Vision, Deep Learning Robustness]
+    - name: Systems
+      icon: microchip
+      icon-solid: true
+      skills: [Computer Architecture, Operating Systems, Databases]
+    - name: Tools
+      icon: screwdriver-wrench
+      icon-solid: true
+      skills: [Git, LaTeX, Typst]
+
+other-information:
+  - |
+    A comprehensive listing of previous projects is available on my
+    #tlink("https://amittai.studio")[portfolio], with source code hosted on
+    GitHub under my #tlink("https://github.com/siavava")[personal profile] and
+    my #tlink("https://github.com/lostflux")[archival organization].

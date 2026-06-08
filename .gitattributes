@@ -1,0 +1,13 @@
+# Count YAML toward GitHub's language stats — Linguist classifies YAML as
+# `data` and hides it from the language bar by default.
+*.yaml linguist-detectable=true
+*.yml  linguist-detectable=true
+
+# Typst is the source language here; make sure it's always counted.
+*.typ  linguist-detectable=true
+
+# Vendored fonts are binary and shouldn't skew language stats.
+vitae/fonts/**  linguist-vendored
+resume/fonts/** linguist-vendored
+*.otf binary
+*.ttf binary

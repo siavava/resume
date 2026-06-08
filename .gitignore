@@ -1,0 +1,12 @@
+# ── OS / editor cruft ──────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.vscode/
+.idea/
+
+# ── Typst ──────────────────────────────────────────────────────────────────
+# Typst emits no build artifacts beyond the compiled PDFs, and we intentionally
+# commit those. Make sure they're never dropped (e.g. by a global *.pdf ignore).
+!*.pdf
