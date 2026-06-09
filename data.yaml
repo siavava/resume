@@ -239,7 +239,7 @@ skills:
 
 other-information:
   - |
-    A comprehensive listing of previous projects is available on my
-    #tlink("https://amittai.studio")[portfolio], with source code hosted on
-    GitHub under my #tlink("https://github.com/siavava")[personal profile] and
-    my #tlink("https://github.com/lostflux")[archival organization].
+    A full #tlink("https://amittai.studio/projects")[projects archive] is
+    available online, with source code hosted on GitHub under my
+    #tlink("https://github.com/siavava")[personal profile] and my
+    #tlink("https://github.com/lostflux")[archival organization].

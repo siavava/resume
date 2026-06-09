@@ -161,7 +161,8 @@
     #section-element(title: "Projects", info: emph[GitHub])[
       #v(0.5em)
       #set text(size: sizes.text-s2)
-      Projects and source code on my
+      A full #link("https://amittai.studio/projects", highlight[projects archive])
+      online, with source code on my
       #link("https://github.com/siavava", highlight[personal profile]) and
       #link("https://github.com/lostflux", highlight[archival organization]).
     ]
