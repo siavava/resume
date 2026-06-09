@@ -36,13 +36,16 @@
     ([Institution], [#tlink(e.institution.url, e.institution.name). #e.location.]),
     ([Degree], [#e.degree.]),
     ([Duration], [#e.duration.]),
-    ([Standing], [Cumulative GPA #e.gpa.overall (#e.gpa.detail). #e.honors.join(" and ").]),
+    ([Honors], [#e.honors.join(" and ").]),
   )
   v(0.8em)
   md(e.at("coursework-intro"))
   enum(..e.coursework.map(c => {
     let label = if "url" in c { tlink(c.url, strong(c.label)) } else { strong(c.label) }
-    [#label#strong[:] #md(c.body)]
+    let body = if "courses" in c {
+      c.courses.map(course => tlink(course.url, [#course.name (#course.code)])).join(", ")
+    } else { md(c.body) }
+    [#label#strong[:] #body]
   }))
   if "other-programs" in e and e.at("other-programs").len() > 0 {
     subsection[Other programs]

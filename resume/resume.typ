@@ -35,12 +35,12 @@
 
 // A list with en-dash markers in the accent colour, used for all bullet lists.
 #let dash-list(items) = {
-  set list(marker: text(fill: accent)[–], indent: 0pt, body-indent: 0.5em, spacing: 0.5em)
+  set list(marker: text(fill: accent)[–], indent: 0pt, body-indent: 0.5em, spacing: 0.42em)
   list(..items)
 }
 
 // Tighter inter-section gap than lavandula's default (3.5em) to keep one page.
-#let section(title: "", body) = block(width: 100%, below: 2.0em)[
+#let section(title: "", body) = block(width: 100%, below: 1.5em)[
   == #title
   #block(inset: (x: 0.5pt), width: 100%, body)
 ]
@@ -65,7 +65,7 @@
 
 // A shared entry layout (used for jobs and schooling): bold title with dates
 // flush-right, an optional location line beneath, a blank line, then the body.
-#let entry(title, dates, body, location: none) = block(width: 100%, below: 1.15em, {
+#let entry(title, dates, body, location: none) = block(width: 100%, below: 1.05em, {
   grid(
     columns: (1fr, auto),
     align: (bottom + left, bottom + right),
@@ -130,7 +130,7 @@
   #section(title: "Education")[
     #entry(edu.institution.name, edu.period, location: edu.at("location-short"), {
       set par(justify: true, spacing: 1em)
-      [#emph(edu.degree) #h(0.4em)·#h(0.4em) #highlight[GPA #edu.gpa.overall]]
+      [#emph(edu.degree)]
       v(0.45em)
       set text(size: sizes.text-s2)
       dash-list((

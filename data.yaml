@@ -42,9 +42,6 @@ education:
   degree: Bachelor of Science in Mathematics and Computer Science
   duration: September 2020 – June 2024
   period: 2020 — 2024
-  gpa:
-    overall: "3.7"
-    detail: 3.87 in Mathematics, 3.9 in Computer Science
   honors:
     - King Scholar
     - Great Issues Scholar
@@ -55,22 +52,53 @@ education:
     Coursework comprised more than forty courses across computer science,
     mathematics, physics, and the humanities, organized as follows:
   coursework:
-    - label: Computer Science — theoretical track
-      body: Algorithms, Theory of Computation, Game Theory.
-    - label: Computer Science — systems track
-      body: |
-        Systems Engineering, Computer Architecture, Fullstack Web Development,
-        Operating Systems, Database Systems.
-    - label: Computer Science — applied track
-      body: |
-        Computational Linguistics / NLP, Machine Learning, Artificial
-        Intelligence, Computer Vision, Physical Computing, Data Mining, Deep
-        Learning Robustness, Face Perception, Computational Neuroscience.
+    - label: Computer Science
+      courses:
+        - { name: "Introduction to Programming", code: "CS 1",  url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-1 }
+        - { name: "Object-Oriented Programming",  code: "CS 10", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-10 }
+        - { name: "Algorithms",                   code: "CS 31", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-31 }
+        - { name: "Theory of Computation",        code: "CS 39", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-39 }
+        - { name: "Software Design & Implementation", code: "CS 50", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-50 }
+        - { name: "Computer Architecture",        code: "CS 51", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-51 }
+        - { name: "Full-stack Web Development",    code: "CS 52", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-52 }
+        - { name: "Database Systems",             code: "CS 61", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-61 }
+        - { name: "Natural Language Processing",  code: "CS 72", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-72 }
+        - { name: "Machine Learning",             code: "CS 74", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-74 }
+        - { name: "Artificial Intelligence",      code: "CS 76", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-76 }
+        - { name: "Computer Vision",              code: "CS 83", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-83 }
+        - { name: "Physical Computing",           code: "CS 89.18", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-89-18 }
+        - { name: "Deep Learning Robustness",     code: "CS 89.31", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-89-31 }
+        - { name: "Functional Programming",       code: "CS 94", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-94 }
     - label: Mathematics
-      body: |
-        Multivariable & Vector Calculus, Linear Algebra, Differential Equations,
-        Computability Theory, Complex & Real Analysis, Mathematical Logic,
-        Abstract Algebra, Algebraic Number Theory, Game Theory.
+      courses:
+        - { name: "Accelerated Multivariable Calculus", code: "MATH 11", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-11 }
+        - { name: "Linear Algebra",          code: "MATH 22", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-22 }
+        - { name: "Differential Equations",  code: "MATH 23", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-23 }
+        - { name: "Computability Theory",    code: "MATH 29", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-29 }
+        - { name: "Analysis",                code: "MATH 63, Honors", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-63 }
+        - { name: "Logic",                   code: "MATH 69, Honors", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-69 }
+        - { name: "Abstract Algebra",        code: "MATH 71, Honors", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-71 }
+        - { name: "Mathematical Cryptography", code: "MATH 75", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/mathematics/math-mathematics-undergraduate/math-75 }
+        - { name: "Game Theory",             code: "MATH 100 / CS 49", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/computer-science/cosc-computer-science-undergraduate/cosc-49 }
+    - label: Physics
+      courses:
+        - { name: "Mechanics & Thermodynamics", code: "PHYS 13", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/physics-and-astronomy/phys-physics-undergraduate/phys-13 }
+        - { name: "Electromagnetism",        code: "PHYS 14", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/physics-and-astronomy/phys-physics-undergraduate/phys-14 }
+    - label: Cognitive Science
+      courses:
+        - { name: "Introduction to Computational Neuroscience", code: "PSYC 40", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/psychological-and-brain-sciences/psyc-psychological-and-brain-sciences/psyc-40 }
+        - { name: "Face Perception",         code: "PSYC 51", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/psychological-and-brain-sciences/psyc-psychological-and-brain-sciences/psyc-51 }
+    - label: Humanities & Arts
+      courses:
+        - { name: "Expository Writing",      code: "WRIT 5",  url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/institute-for-writing-and-rhetoric/writ-writing/writ-5 }
+        - { name: "Investigative Memoir",    code: "ENGL 7",  url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/english-and-creative-writing/engl-and-crwt-english-and-creative-writing-courses/section-i-non-major-courses/engl-7 }
+        - { name: "Ancient Greek & Roman Philosophers", code: "PHIL 11", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/philosophy/phil-philosophy/phil-11 }
+        - { name: "Introduction to African Studies", code: "AAAS 11", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/african-and-african-american-studies/aaas-african-and-african-american-studies/aaas-11 }
+        - { name: "Computational Comparative Literature", code: "QSS 30.22", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/quantitative-social-science/qss-quantitative-social-sciences/qss-30-22 }
+        - { name: "Religion and Imperialism", code: "REL 67", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/religion/rel-religion/intermediate-courses/rel-67 }
+        - { name: "Introductory French",     code: "FREN 1",  url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/french-and-italian-languages-and-literatures/fren-french/fren-1 }
+        - { name: "The Intentional Photograph", code: "SART 29", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/studio-art/sart-studio-art/sart-29 }
+        - { name: "Architecture",            code: "SART 65", url: https://dartmouth.smartcatalogiq.com/current/orc/departments-programs-undergraduate/studio-art/sart-studio-art/sart-65 }
     - label: Senior Design Challenge
       url: https://discite-website.vercel.app/
       body: |
@@ -109,9 +137,13 @@ experience:
         #tlink("https://developers.facebook.com/docs/messenger-platform/send-messages/utility-messages/")[*Utility Messages API*],
         a new class of messages for notifications like appointment reminders and
         shipping updates, and the
-        #tlink("https://developers.facebook.com/docs/messenger-platform/calling/consumer2biz")[*Consumer-to-Business Calling API*],
+        #tlink("https://developers.facebook.com/documentation/business-messaging/messenger-platform/calling")[*Calling API*],
         which brings voice and video calling into third-party messaging
-        experiences.
+        experiences. Others include the
+        #tlink("https://developers.facebook.com/docs/pages-api/integrity-webhook")[*Page Integrity API*],
+        #tlink("https://developers.facebook.com/documentation/business-messaging/messenger-platform/discovery/lead-generation-ads-in-messenger")[*Lead Generation Ads*],
+        #tlink("https://developers.facebook.com/documentation/business-messaging/messenger-platform/send-messages/template/generic")[*Generic Template*],
+        and a *messaging media-processing pipeline*, among others.
       - |
         Partnering with cross-functional teams (product, design, data science
         and data engineering) to deliver features, read usage trends, and drive
@@ -120,7 +152,7 @@ experience:
       - |
         Carrying 24/7 platform ownership one week every ∼3 months through the
         team's immediate-response oncall (`IROC`) rotation.
-    technologies: C++, Hack, Swift, Objective-C, JavaScript, Python
+    technologies: C++, Hack/PHP, Swift, Objective-C, JavaScript, Python
   - role: Software Engineering Intern
     org: Meta / Facebook
     location: Menlo Park, California
@@ -141,7 +173,7 @@ experience:
         built a command-line utility for monitoring and controlling data
         throughput, letting ML engineers tune data rates to the scale of
         experimentation.
-    technologies: C++, Hack, Python, SQL
+    technologies: C++, Hack/PHP, Python, SQL
 
 teaching:
   - role: Teaching Assistant
@@ -189,7 +221,7 @@ publications:
       description: Explores previous and current themes in human space exploration.
 
 skills:
-  languages: "Python, Rust, C, C++, Java, TypeScript, Hack, Haskell, x86 Assembly, HTML, CSS, SQL, LaTeX, Julia, C#, F#."
+  languages: "Python, Rust, C, C++, Java, TypeScript, Hack/PHP, Haskell, x86 Assembly, HTML, CSS, SQL, LaTeX, Julia, C#, F#."
   languages-note: (list not exhaustive; in rough order of familiarity / preference)
   areas-of-interest: |
     Machine learning, artificial intelligence, NLP, computer vision, deep
@@ -199,23 +231,11 @@ skills:
     - name: Languages
       icon: code
       icon-solid: true
-      skills: [Python, Rust, C, C++, Java, TypeScript, Hack, Haskell, x86 Assembly, Julia, "C#", "F#"]
-    - name: Web & Data
-      icon: laptop-code
+      skills: [Python, Rust, C, C++, Objective-C, Swift, Java, TypeScript, Hack/PHP, Haskell, x86 Assembly, SQL, Julia, "C#", "F#"]
+    - name: Areas of Interest
+      icon: lightbulb
       icon-solid: true
-      skills: [HTML, CSS, JavaScript, SQL, Full-stack web]
-    - name: ML & AI
-      icon: brain
-      icon-solid: true
-      skills: [Machine Learning, NLP, Computer Vision, Deep Learning Robustness]
-    - name: Systems
-      icon: microchip
-      icon-solid: true
-      skills: [Computer Architecture, Operating Systems, Databases]
-    - name: Tools
-      icon: screwdriver-wrench
-      icon-solid: true
-      skills: [Git, LaTeX, Typst]
+      skills: [Design, Computer Architecture, Operating Systems, Deep Learning, Computer Vision, Robotics, Reinforcement Learning]
 
 other-information:
   - |
